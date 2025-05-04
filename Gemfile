@@ -141,7 +141,7 @@ group :development, :test do
   # export db en yaml
   gem 'yaml_db', git: "https://github.com/gadzorg/yaml_db"
 
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'rack-mini-profiler'
