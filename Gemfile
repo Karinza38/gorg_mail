@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby File.read('.ruby-version')
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.3'
+gem 'rails', '7.0.0'
 gem "bootsnap", require: false
 
 #DATABASE
@@ -148,7 +148,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'cucumber-rails', require: false
+  gem 'cucumber-rails', '>= 2.1.0', require: false
   gem 'capybara'
   gem 'selenium'
   gem 'selenium-webdriver'
