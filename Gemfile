@@ -142,7 +142,7 @@ group :development, :test do
   gem 'yaml_db', git: "https://github.com/gadzorg/yaml_db"
 
   gem 'rspec-rails'
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 6.5.0'
   gem 'faker'
   gem 'rack-mini-profiler'
 end
