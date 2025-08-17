@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby File.read('.ruby-version')
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.3'
+gem 'rails', '7.1.5.2'
 gem "bootsnap", require: false
 
 #DATABASE
@@ -24,7 +24,7 @@ gem 'execjs'
 
 
 #Documentation
-gem 'annotate'
+gem 'annotate', '>= 3.2.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -102,7 +102,7 @@ gem 'nokogiri'
 gem 'puma', '~> 4.3'
 gem 'scout_apm'
 
-gem 'activerecord-import'
+gem 'activerecord-import', '>= 1.0.3'
 
 gem 'materialize-sass', '~> 0.100'
 
@@ -133,7 +133,7 @@ group :development, :test do
   gem "letter_opener"
 
   #pour les diagramme UML
-  gem 'rails-erd'
+  gem 'rails-erd', '>= 1.6.1'
 
   #better cli table view for db
   gem 'hirb'
