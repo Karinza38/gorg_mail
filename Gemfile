@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby File.read('.ruby-version')
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.3'
+gem 'rails', '5.2.4'
 gem "bootsnap", require: false
 
 #DATABASE
@@ -27,8 +27,8 @@ gem 'execjs'
 gem 'annotate'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
+gem 'jquery-rails', '>= 4.4.0'
+gem 'jquery-ui-rails', '>= 7.0.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
@@ -36,10 +36,10 @@ gem 'jbuilder'
 gem 'sdoc', group: :doc
 
 # Authentification
-gem 'devise'
-gem 'omniauth'
+gem 'devise', '>= 4.7.2'
+gem 'omniauth', '>= 1.3.1'
 gem "omniauth-cas", git: "https://github.com/loocla/omniauth-cas", branch: 'saml'
-gem 'devise_masquerade'
+gem 'devise_masquerade', '>= 1.0.0'
 
 # Authorisation
 gem 'cancancan'
@@ -52,10 +52,10 @@ gem 'email_validator'
 
 
 # Templates
-gem 'haml-rails'
+gem 'haml-rails', '>= 2.1.0'
 
 # Forms
-gem 'simple_form'
+gem 'simple_form', '>= 5.0.0'
 gem 'virtus'
 
 # Pagination
@@ -96,7 +96,7 @@ gem 'gorg_service'
 gem 'gorg_slack_chat', git: "https://github.com/gadzorg/gorg_slack_chat"
 
 # For HTML mails
-gem 'premailer-rails'
+gem 'premailer-rails', '>= 1.11.0'
 gem 'nokogiri'
 
 gem 'puma', '~> 4.3'
@@ -115,8 +115,8 @@ group :development do
   gem "listen", require: false
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console'
-  gem "better_errors"
+  gem 'web-console', '>= 4.0.0'
+  gem "better_errors", ">= 2.6.0"
   gem "binding_of_caller"
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -141,15 +141,15 @@ group :development, :test do
   # export db en yaml
   gem 'yaml_db', git: "https://github.com/gadzorg/yaml_db"
 
-  gem 'rspec-rails'
-  gem 'factory_bot_rails'
+  gem 'rspec-rails', '>= 3.8.3'
+  gem 'factory_bot_rails', '>= 5.1.0'
   gem 'faker'
-  gem 'rack-mini-profiler'
+  gem 'rack-mini-profiler', '>= 1.1.0'
 end
 
 group :test do
-  gem 'cucumber-rails', require: false
-  gem 'capybara'
+  gem 'cucumber-rails', '>= 2.0.0', require: false
+  gem 'capybara', '>= 3.30.0'
   gem 'selenium'
   gem 'selenium-webdriver'
   gem 'poltergeist'
@@ -161,5 +161,5 @@ group :test do
   gem 'webmock'
   gem 'simplecov'
 
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.5'
 end
