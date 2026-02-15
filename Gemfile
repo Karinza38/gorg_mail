@@ -85,7 +85,7 @@ gem 'bootstrap-tooltip-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'google-api-client'
+gem 'google-api-client', '>= 0.53.0'
 
 # Gadz.org Gems Gram v2 client
 gem 'gram_v2_client', git: "https://github.com/gadzorg/gram2_api_client_ruby"
